@@ -10,6 +10,35 @@ Make sure you've registered your Facebook app with Facebook and have an `APP_ID`
 $ cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID="123456789" --variable APP_NAME="myApplication"
 ```
 
+## Memo
+
+iOS9 でも SSO できるように
+
+- SDK を 4.4 に変更
+- 下記を plugin.xml に追加
+
+```
+        <!-- support sso in facebook -->
+        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+            <key>LSApplicationQueriesSchemes</key>
+            <array>
+                <string>fbapi</string>
+                <string>fbapi20130214</string>
+                <string>fbapi20130410</string>
+                <string>fbapi20130702</string>
+                <string>fbapi20131010</string>
+                <string>fbapi20131219</string>    
+                <string>fbapi20140410</string>
+                <string>fbapi20140116</string>
+                <string>fbapi20150313</string>
+                <string>fbapi20150629</string>
+                <string>fbauth</string>
+                <string>fbauth2</string>
+                <string>fb-messenger-api20140430</string>
+            </array>
+        </config-file>
+```
+
 ## Usage
 
 This is a fork of the [official plugin for Facebook](https://github.com/Wizcorp/phonegap-facebook-plugin/) in Apache Cordova that implements the latest Facebook SDK. Unless noted, this is a drop-in replacement. You don't have to replace your client code.
