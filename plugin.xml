@@ -42,7 +42,6 @@
             <access origin="https://graph.facebook.com" />
             <access origin="https://api.facebook.com" />
             <access origin="https://*.fbcdn.net" />
-            <access origin="https://*.akamaihd.net" />
             <preference name="android-minSdkVersion" value="15" />
         </config-file>
 
@@ -83,7 +82,6 @@
             <access origin="https://graph.facebook.com" />
             <access origin="https://api.facebook.com" />
             <access origin="https://*.fbcdn.net" />
-            <access origin="https://*.akamaihd.net" />
         </config-file>
 
         <header-file src="src/ios/FacebookConnectPlugin.h" />
