@@ -79,8 +79,6 @@
                 <param name="onload" value="true" />
             </feature>
             <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin"/>
-            <access origin="https://m.facebook.com" />
-            <access origin="https://graph.facebook.com" />
         </config-file>
 
         <header-file src="src/ios/FacebookConnectPlugin.h" />
