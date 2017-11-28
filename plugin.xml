@@ -81,7 +81,6 @@
             <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin"/>
             <access origin="https://m.facebook.com" />
             <access origin="https://graph.facebook.com" />
-            <access origin="https://*.fbcdn.net" />
         </config-file>
 
         <header-file src="src/ios/FacebookConnectPlugin.h" />
